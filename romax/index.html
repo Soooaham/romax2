@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Guide</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .section {
+            text-align: center;
+            padding: 30px 10px;
+            max-width: 1000px;
+            margin: auto;
+            border-bottom: 2px solid #8b0000;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ff7b00;
+            margin-bottom: 20px;
+
+
+            padding: 15px 0;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: left;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .content ul,
+        .content ol {
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .paytable-entry {
+            margin-bottom: 8px;
+        }
+
+        .button-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .button-icon {
+            height: 40px;
+            width: 40px;
+            object-fit: contain;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .title {
+                font-size: 24px;
+            }
+
+            .content {
+                font-size: 16px;
+            }
+
+            .button-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .button-icon {
+                margin-bottom: 10px;
+            }
+
+            .paytable-entry {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .section {
+                padding: 20px 10px;
+            }
+
+            .paytable-icon-box {
+                width: 100% !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center !important;
+            }
+
+            .paytable-icon-box img {
+                margin-bottom: 10px;
+            }
+
+            .paytable-icon-box div {
+                padding-top: 0 !important;
+            }
+
+            .content ul {
+                padding-left: 18px;
+            }
+            .patternimg{
+                width: 240px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Free Game -->
+    <div class="section">
+        <div class="title">Free Game</div>
+        <div class="content">
+            <ul>
+                <li>Get a free game by clearing 4 or more in the same round of the main game.</li>
+                <li>Get 3, 5, 10, and 20 free games by clearing 4, 5, 6, and 7 consecutively in the same round.</li>
+                <li>In a free game, you can get 3, 5, 10, and 20 free games too by clearing 4, 5, 6, and 7 in the same
+                    round.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bonus Game -->
+    <div class="section">
+        <div class="title">Bonus Game</div>
+        <div class="content">
+            <ul>
+                <li>In a main game, when three bonus icons appear on the win line, a bonus game can be triggered.</li>
+                <li>1 stamina is deducted when fighter takes damage. The bonus game ends when stamina = 0.</li>
+                <li>Choose from 3 options: Dual swords, Single sword, or Lion.</li>
+                <li>Attack the lion or defend from lion's attacks to win rewards (lion can evade attack).</li>
+                <li>Payouts:
+                    <ul>
+                        <li>Dual swords – Bet × 20</li>
+                        <li>Single sword – Bet × 10</li>
+                        <li>Lion – Bet × 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Wild -->
+    <div class="section">
+        <div class="title">Wild</div>
+        <div class="content">
+            <p>Wild represents any icon in the game (except bonus icon).</p>
+        </div>
+    </div>
+
+    <!-- Paytable -->
+    <!-- Paytable -->
+    <div class="section">
+        <div class="title">Paytable</div>
+        <div class="content" style="text-align: center;">
+            <p>Payouts are shown as bet = 6. Symbol payouts reflect combinations at the current bet level.</p>
+
+            <!-- Top Paytable Icon (full width) -->
+            <div
+                style="border: 2px solid red; padding: 15px; margin: 20px auto; display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; max-width: 735px;">
+                <img src="media/image3.png" alt="Icon 1" style="height: 80px;">
+                <div style="text-align: left; color: yellow;">
+                    <div>5 × <span style="color:white;">400</span></div>
+                    <div>4 × <span style="color:white;">60</span></div>
+                    <div>3 × <span style="color:white;">6</span></div>
+                </div>
+            </div>
+
+            <!-- 2 Icons Side-by-Side -->
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+                <div
+                    style="border: 2px solid white; padding: 10px; width: 350px; display: flex; justify-content: space-between; align-items: center;">
+                    <img src="media/image4.png" alt="Icon 2" style="height: 80px;">
+                    <div style="text-align: left; color: yellow; padding-top: 10px;">
+                        <div>5 × <span style="color:white;">200</span></div>
+                        <div>4 × <span style="color:white;">40</span></div>
+                        <div>3 × <span style="color:white;">6</span></div>
+                    </div>
+                </div>
+
+                <div
+                    style="border: 2px solid white; padding: 10px; width: 350px; display: flex; justify-content: space-between; align-items: center;">
+                    <img src="media/image5.png" alt="Icon 3" style="height: 80px;">
+                    <div style="text-align: left; color: yellow; padding-top: 10px;">
+                        <div>5 × <span style="color:white;">80</span></div>
+                        <div>4 × <span style="color:white;">20</span></div>
+                        <div>3 × <span style="color:white;">4</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more icon boxes similarly as needed -->
+            <!-- Example layout below (repeat and swap icons/text) -->
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+                <div
+                    style="border: 2px solid white; padding: 10px; width: 350px; display: flex; justify-content: space-between; align-items: center;">
+                    <img src="media/image6.png" alt="Icon 4" style="height: 80px;">
+                    <div style="text-align: left; color: yellow; padding-top: 10px;">
+                        <div>5 × <span style="color:white;">48</span></div>
+                        <div>4 × <span style="color:white;">12</span></div>
+                        <div>3 × <span style="color:white;">4</span></div>
+                    </div>
+                </div>
+
+                <div
+                    style="border: 2px solid white; padding: 10px; width: 350px; display: flex; justify-content: space-between; align-items: center;">
+                    <img src="media/image7.png" alt="Icon 5" style="height: 80px;">
+                    <div style="text-align: left; color: yellow; padding-top: 10px;">
+                        <div>5 × <span style="color:white;">30</span></div>
+                        <div>4 × <span style="color:white;">6</span></div>
+                        <div>3 × <span style="color:white;">2</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more icon boxes similarly as needed -->
+            <!-- Example layout below (repeat and swap icons/text) -->
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+                <div
+                    style="border: 2px solid white; padding: 10px; width: 350px; display: flex; justify-content: space-between; align-items: center;">
+                    <img src="media/image8.png" alt="Icon 4" style="height: 80px;">
+                    <div style="text-align: left; color: yellow; padding-top: 10px;">
+                        <div>5 × <span style="color:white;">48</span></div>
+                        <div>4 × <span style="color:white;">12</span></div>
+                        <div>3 × <span style="color:white;">4</span></div>
+                    </div>
+                </div>
+
+                <div
+                    style="border: 2px solid white; padding: 10px; width: 350px; display: flex; justify-content: space-between; align-items: center;">
+                    <img src="media/image9.png" alt="Icon 5" style="height: 80px;">
+                    <div style="text-align: left; color: yellow; padding-top: 10px;">
+                        <div>5 × <span style="color:white;">30</span></div>
+                        <div>4 × <span style="color:white;">6</span></div>
+                        <div>3 × <span style="color:white;">2</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Game Rules -->
+    <div class="section">
+        <div class="title">Game Rules</div>
+        <div class="content">
+            <ul>
+                <li>Bet line wins pay from left to right as per paytable.</li>
+                <li>Only the biggest payout is considered per payline.</li>
+                <li>
+                    <p>Pay line:</p>
+                    <img class="patternimg" src="media/image10.png" alt="">
+                </li>
+                <li>Winning combinations follow the paytable rules.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Game Interruption Mechanism -->
+    <div class="section">
+        <div class="title">Game Interruption Mechanism</div>
+        <div class="content">
+            <ol>
+                <li>Malfunctions void all pays and plays. If a malfunction occurs during a feature game, the system will
+                    automatically complete the game and award the player.</li>
+                <li>If a disconnection occurs after receiving the player's bet and the player can no longer influence
+                    the outcome, the bet result remains valid.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Payout Info -->
+    <div class="section">
+        <div class="title">Payout Information</div>
+        <div class="content">
+            <ul>
+                <li>Game round ends immediately when max payout multiplier is reached.</li>
+                <li>Maximum Payout: ‎600,000</li>
+                <li>Maximum Payout Multiplier: 500×</li>
+                <li>Minimum bet: ‎1.2</li>
+                <li>Maximum bet: ‎1,200</li>
+                <li>Guaranteed 500× payout within 100,000,000 rounds of play.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="section">
+        <div class="title">Buttons</div>
+        <div class="content">
+            <div class="button-row">
+                <img src="media/image11.png" alt="Spin" class="button-icon">
+                <div>
+                    <strong>Spin</strong><br>
+                    Tap to start spinning based on current bet. Can click reels or use spacebar (not available on all
+                    platforms).
+                </div>
+            </div>
+
+            <div class="button-row">
+                <img src="media/image12.png" alt="Auto Spin" class="button-icon">
+                <div>
+                    <strong>Auto Spin</strong><br>
+                    Tap to start auto spin or open settings:
+                    <ul>
+                        <li>Total Spins – Set how many rounds to play.</li>
+                        <li>Stop if win exceeds set multiplier.</li>
+                        <li>Stop if balance is less than or greater than set value.</li>
+                        <li>Stop on Bonus Game or Free Game trigger.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <img src="media/image13.png" alt="Bet Select" class="button-icon">
+                <div>
+                    <strong>Bet Select</strong><br>
+                    Tap to adjust the bet amount.
+                </div>
+            </div>
+
+            <div class="button-row">
+                <img src="media/image14.png" alt="Turbo Spin" class="button-icon">
+                <div>
+                    <strong>Turbo Spin</strong><br>
+                    Enable faster spinning.
+                </div>
+            </div>
+
+            <div class="button-row">
+                <img src="media/image15.png" alt="Super Turbo Spin" class="button-icon">
+                <div>
+                    <strong>Super Turbo Spin</strong><br>
+                    Double tap Turbo for ultra speed.
+                </div>
+            </div>
+
+            <div class="button-row">
+                <img src="media/image16.png" alt="Options" class="button-icon">
+                <div>
+                    <strong>Options</strong><br>
+                    Tap to view game instructions and sound toggle.
+                </div>
+            </div>
+
+            <div class="button-row">
+                <img src="media/image17.png" alt="Game Rules" class="button-icon">
+                <div>
+                    <strong>Game Rules</strong><br>
+                    Tap to view all game rules.
+                </div>
+            </div>
+
+            <div class="button-row">
+                <img src="media/image18.png" alt="Sound" class="button-icon">
+                <div>
+                    <strong>Sound</strong><br>
+                    Toggle ON/OFF.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
